@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+    <title>Survey</title>
+</head>
+<body>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    <div id="main">
+    <h1 id="title">Tecnology Survey</h1>
+    <hr>
+    <br><br>
+    <p id="description">
+        A short survey about the use of tecnologies in the day by day.
+    </p>
+
+    <form id="survey-form">
+        <label for="name" id="name-label">Name:</label>
+        <input type="text" id="name" placeholder="Put your full name" required><br>
+        <label for="name" id="email-label">Email:</label><br>
+        <input type="email" id="email" name="email" placeholder="Put your email" required><br>
+        <label for="number" id="number-label">Put your age</label><br>
+        <input type="number" id="number" placeholder="Put your age" min="1" max="99" required><br>
+        
+        <label for="dropdown" name="role" required>which describes best your current ocupation?</label>
+        <br><select name="menu" id="dropdown">
+            <option disabled selected value>Select current ocupation</option>
+            <option value="student">Student</option>
+            <option value="job">Full Time Job</option>
+            <option value="learner">Full Time Learner</option>
+            <option value="preferNo">Prefer not to say</option>
+            <option value="other">Other</option>
+      </select>
+      <fieldset>
+      <div id="radio">
+        <p>Select your favorite tecnology:</p>
+            <input class="radio" type="radio" id="games" value="games" name="tecnology">Games<br>
+            <input class="radio" type="radio" id="socialmedia" value="socialmedia" name="tecnology">Social Media<br>
+            <input class="radio" type="radio" id="videos" value="videos" name="tecnology">Videos<br>
+        </div>
+        </fieldset>
+
+        <div id="checkbox">
+        <p>What tecnology do you think you think are more useful and present in the internet in the last years?</p>
+        <label><input  name="techs" value="cellphones" type="checkbox" class="input-checkbox"/>Cellphones</label>
+        <label><input  name="techs" value="websites" type="checkbox" class="input-checkbox"/>Websites</label>
+        <label><input  name="techs" value="day-to-day" type="checkbox" class="input-checkbox"/>Day-to-day technology</label>
+        <label><input  name="techs" value="social" type="checkbox" class="input-checkbox"/>Social Media</label>
+        <label><input  name="techs" value="webcourses" type="checkbox" class="input-checkbox"/>Web courses</label>
+            </div>
+        <p>Any coments adicional comments to do about the subject? Anything is allowed here!</p>
+        <textarea id="comments" class="input-textarea" name="comment" placeholder="Enter your sugestions and comments here..."></textarea>
+            <button type="submit" id="submit" value="submit">Submit</button>        
+    </form>
+    </div>
+
+</body>
+</html>
