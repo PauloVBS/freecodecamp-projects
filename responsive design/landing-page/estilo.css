@@ -1,0 +1,168 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    color: lavenderblush;
+}
+header{
+    background-color: rgb(112, 85, 16);
+    height: 50px;
+    width: -webkit-fill-available;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+#header-img{
+    height: inherit;
+}
+#nav-bar{
+    width: 50%;
+    margin-right: 30px;
+}
+.nav-link{
+    text-decoration: none;
+    font-weight: bold;
+}
+nav > ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-variant: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-variant: normal;
+
+}
+body{
+    background-color: goldenrod;
+}
+main{
+    height: fit-content;
+    border: 2px  solid #FFFFFF;
+    margin-top: 50px;
+}
+h1{
+    text-align: center;
+    margin: 5px;
+    text-shadow: 3px 3px 3px #000;
+
+}
+#form{
+    margin-bottom: 22px;
+
+}
+#colocaremail{
+    text-align: center;
+    margin-top: 10px;
+    width: 100%;
+    font-size: 15px;
+
+}
+#email{
+    border: none;
+    border-radius: 3px;
+    height: 30px;
+    font-size: 15px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+.button{
+    background-color: rgb(199, 111, 28);
+    font-family: Broadway Copyist Text;
+    font-size: 20px;
+    height: 30px;
+    width: fit-content;
+    color: lavenderblush;
+    border: none;
+    border-radius: 3px;
+    width: 150px;
+    position: relative;
+
+
+}
+.button:hover{
+    background-color: rgb(133, 76, 23);
+
+}
+.button:active{
+    box-shadow: inset 3px 3px #000;
+    top: 3px;
+}
+.rooms{
+    width: 200px;
+    height: auto;
+    display: grid;
+    border-radius: 3px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+.quartos{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-auto-flow: row;
+    row-gap: 29px;
+    margin-left: auto;
+    margin-right: auto;
+    justify-items: center;
+}
+.card{
+    border-radius: 5px;
+    border: transparent 15px;
+    box-shadow: 7px 7px 13px 0px rgb(50 50 50 / 22%);
+    padding: 30px;
+    
+    width: 400px;
+    transition: all 0.3s ease-out;
+    background-color: khaki;
+    color: rgb(54, 61, 68);
+    height: 246.66px;
+  }
+  .beachview{
+      margin-top: 30px;
+  }
+  #caixadevideo{
+      margin: 30px;
+      text-align: center;
+
+  }
+  h2{
+      text-align: center;
+      font-family: Arial, Helvetica, sans-serif;
+      font-weight: bold;
+       font-size: 30px;
+       text-shadow: 3px 3px 3px #000;
+  }
+  p{
+      text-align: center;
+      font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
+  }
+  @media only screen and (max-width: 1000px){
+      .quartos{
+        display: table;
+
+      }
+      .card{
+          margin: 20px;
+      }
+    
+}
+ @media only screen and (max-width:530px) {
+    .quartos{
+        display: table;
+
+      }
+      .card{
+        margin: 20px;
+        width: 250px;
+      }
+      #video{
+          width: 250px;
+          height: auto;
+      }
+     
+ }
