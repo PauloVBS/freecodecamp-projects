@@ -1,0 +1,48 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    display: grid;
+    grid-template-columns:[navbar] 1fr [conteudo] 4fr;
+    background-color: cornflowerblue;
+
+}
+#navbar{
+    position: fixed;
+    grid-column: navbar;
+    column-rule-color: blanchedalmond;
+    
+}
+#main-doc{
+    grid-column: conteudo;
+    border-left: solid 1px blanchedalmond;
+    padding: 10px;
+}
+.main-section{
+    left: 15px;
+}
+header{
+    font-size: 20px;
+    font-weight: bold;
+}
+#header{
+    text-align: center;
+}
+.nav-link{
+    text-decoration: none;
+    color:rgb(16, 95, 91);
+    padding-top: 10px;
+}
+.listinha{
+    padding-top: 10px;
+    color: whitesmoke;
+}
+@media only screen and (max-width:530px){
+    #header{
+        font-size: 15px;
+    }
+    header{
+        font-size: 15px;
+    }
+    
+}
